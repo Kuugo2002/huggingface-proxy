@@ -31,7 +31,7 @@ node server.js
 
 使用预构建的镜像:
 ```bash
-docker run -p 8015:8015 -d kuugo/huggingface-proxy:0.1
+docker run --name huggingface-proxy -p 8015:8015 -d kuugo/huggingface-proxy:0.2
 ```
 
 或自行构建镜像:
@@ -66,12 +66,6 @@ const data = await response.json();
 console.log(data);
 ```
 
-## 配置选项
-
-在 Docker 中自定义端口：
-```bash
-docker run -p 8080:8080 -e PORT=8080 -d kuugo/huggingface-proxy:0.1
-```
 
 ## 技术细节
 
