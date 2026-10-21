@@ -1,0 +1,12 @@
+{
+  "name": "huggingface-proxy",
+  "version": "0.3.0",
+  "private": true,
+  "description": "A streaming reverse proxy for Hugging Face",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}
